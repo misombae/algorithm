@@ -16,11 +16,11 @@ def binary_search(array, target, start, end):
             if x > mid : #잘린 경우 요청한 떡의 길이 더함 
                 total += x - mid
         
-            if total < m : # 요청한 길이보다 적을 경우 절단기의 길이를 줄임 
-                end = mid - 1
-            else : # 떡의 양이 충분한 경우  
-                result =  mid 
-                start = mid + 1 
+        if total < m : # 요청한 길이보다 적을 경우 절단기의 길이를 줄임 
+            end = mid - 1
+        else : # 떡의 양이 충분한 경우  
+            result =  mid 
+            start = mid + 1 
     return result 
 
 
